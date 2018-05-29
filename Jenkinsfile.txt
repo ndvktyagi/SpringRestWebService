@@ -39,10 +39,10 @@ node {
 		])
       	}
       	stage ('Deploy') {
-             "echo 'shell scripts to deploy to server...'"
+             //"echo 'shell scripts to deploy to server...'"
       	}
     } catch (err) {
-        currentBuild.result = 'FAILED'
-        throw err
+       // currentBuild.result = 'FAILED'
+      //  throw err
     }
 }
